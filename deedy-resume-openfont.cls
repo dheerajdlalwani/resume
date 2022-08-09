@@ -55,10 +55,10 @@ Last Updated on
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{40pt}{10cm}\selectfont #1
+		\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{30pt}{10cm}\selectfont #1
 		\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\selectfont #2
 	} \\
-	\vspace{5pt}
+	\vspace{3pt}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
@@ -86,7 +86,7 @@ Last Updated on
 \newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1} \normalfont}
 
 % Section seperators command
-\newcommand{\sectionsep}[0]{\vspace{8pt}}
+\newcommand{\sectionsep}[0]{\vspace{5pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-1mm}\begin{itemize}\itemsep1pt \parskip1.5pt \parsep1.5pt}{\end{itemize}\vspace{-\topsep}}

@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \documentclass[]{deedy-resume-openfont}
+  
+      \begin{document}
+      
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     Profile
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\namesection{Dheeraj} {Lalwani}\infoline{\href{mailto:lalwanidheeraj1234@gmail.com}{lalwanidheeraj1234@gmail.com} | +91 8451904417 | 6, Naivedika Bldg, Naigaon CHS, Dadar (East), Mumbai 400014}\\\vspace{4pt}\linksline{\descript{\href{https://github.com/dheerajdlalwani}{GitHub | }}\descript{\href{https://linkedin.com/in/lalwanidheeraj}{Linkedin | }}\descript{\href{https://twitter.com/DhiruCodes}{Twitter}}}\underlineheader{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\raggedright
+
+    \runsubsection{Thadomal Shahani Engineering College (TSEC), Mumbai}\hspace*{\fill}  \location{August 2019 - May 2023}\\
+    \descript{Bachelors Computer Engineering}\hspace*{\fill}\location{Mumbai}\
+    Cgpa: 9.402\\
+    \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Experience
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Experience}
+        \runsubsection{Riggle}\descript{| Backend Engineering Intern}\hfill \location{Mumbai, India | June 2022 – Present}
+            \begin{tightemize}
+  \item I am building RESTFul APIs from scratch for a suite of 6 interconnected Supply Chain Products and getting insights about the product management lifecycle.
+  \item Stack: Python, MySQL, Django, Django REST Framework.
+\end{tightemize}
+            \sectionsep
+        \runsubsection{Navlakhi}\descript{| Intern}\hfill \location{Mumbai, India | June 2020 – August 2020}
+            \begin{tightemize}
+  \item Lead a team of 8 developers to build 2 internal platforms for student data management and for CSV to Database automation.
+  \item Learnt all the things you must never do when building a project.
+  \item Stack: PHP, MySQL, HTML, CSS
+\end{tightemize}
+            \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{tabular}{p{5cm}p{13.5cm}}
+\descript{Programming Languages} & {\location{Python, Golang, Java, JS, HTML, CSS, PHP}} \\
+\descript{Libraries/Frameworks} & {\location{Django, Django REST Framework, Flask}} \\
+\descript{Tools / Platforms} & {\location{Git, GitHub, Figma}} \\
+\descript{Databases} & {\location{MySQL, SQLite}} \\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Projects
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Projects / Open-Source}
+        \raggedright
+        
+            \runsubsection{\large{Dekho}}
+            \descript{| \href{https://github.com/Chirag-And-Dheeraj/video-streaming-server}{Link}}\hfill \location{Go, HTML, CSS, JS}\\
+            \begin{tightemize}
+  \item It is a very crude, basic video streaming server written from scratch.
+  \item Applied the fundamentals HTTP Live Streaming \& chunked file uploads for large files.
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{Back to Work}}
+            \descript{| \href{https://github.com/dheerajdlalwani/back-to-work}{Link}}\hfill \location{JavaScript, Chromium Web Extension APIs, HTML, CSS}\\
+            \begin{tightemize}
+  \item A web extension which attempts to keep you focused by blocking distractive websites.
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{Kata}}
+            \descript{| \href{https://github.com/dheerajdlalwani/url-shortener}{Link}}\hfill \location{Flask, Python, MongoDB, JavaScript}\\
+            \begin{tightemize}
+  \item Kata is a very simple, clutter free URL Shortener.
+  \item Goal with this project was to become comfortable learnigng new technologies on the fly.
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{Navidrome}}
+            \descript{| \href{https://github.com/navidrome/navidrome/pull/1379}{Link}}\hfill \location{Go, Ginkgo, Gomega}\\
+            \begin{tightemize}
+  \item This is an opensource contribution to a GSoC project which wasn\textquotesingle{}t opted by anyone.
+  \item I implemented an API to fetch Lyrics of a particular song provided the Artist and Title.
+  \item I also wrote unit tests for the same.
+\end{tightemize}
+            \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Awards
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honors \& Awards}
+\begin{tightemize}
+\item I\textquotesingle{}ve been an admin for OTC (Our Tech Community)\\
+\item I\textquotesingle{}ve also helped organize 2 hackathons as an core team member at TSEC CodeCell\\
+\end{tightemize}
+      \ 
+      \end{document}

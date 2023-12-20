@@ -46,17 +46,17 @@
 % 2. Hacky space on the first bullet point on the second column.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \documentclass[]{deedy-resume-openfont}
+\documentclass[]{deedy-resume-openfont}
   
-      \begin{document}
-      
+\begin{document}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %
-  %     Profile
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  
-\namesection{Dheeraj} {Lalwani}\infoline{\href{mailto:lalwanidheeraj1234@gmail.com}{lalwanidheeraj1234@gmail.com} | +91 8451904417 \\\vspace{4pt}\linksline{\descript{\href{https://github.com/dheerajdlalwani}{GitHub | }}\descript{\href{https://linkedin.com/in/lalwanidheeraj}{Linkedin | }}\descript{\href{https://twitter.com/DhiruCodes}{Twitter}}}\underlineheader{}
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Dheeraj} {Lalwani}\infoline{\href{mailto:lalwanidheeraj1234@gmail.com}{lalwanidheeraj1234@gmail.com} | +91 8451904417 \\\vspace{4pt}\linksline{\descript{\href{https://github.com/dheerajdlalwani}{GitHub: dheerajdlalwani | }}\descript{\href{https://linkedin.com/in/lalwanidheeraj}{Linkedin: lalwanidheeraj | }}\descript{\href{https://twitter.com/DhiruCodes}{Twitter: DhiruCodes}}}\underlineheader{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -66,27 +66,34 @@
 \section{Education}
 \raggedright
 
-    \runsubsection{Thadomal Shahani Engineering College (TSEC), Mumbai}\hspace*{\fill}  \location{August 2019 - May 2023}\\
-    \descript{Bachelors Computer Engineering}\hspace*{\fill}\location{Mumbai}\
-    CGPA: 9.402\\
-    \sectionsep
+\runsubsection{Thadomal Shahani Engineering College (TSEC), Mumbai}\hspace*{\fill}  \location{August 2019 - May 2023}\\
+\descript{Bachelors Computer Engineering}\hspace*{\fill}\location{Mumbai}\
+CGPA: 9.402\\
+\sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Experience
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
-\runsubsection{Riggle}\descript{| Backend Engineering Intern}\hfill \location{Mumbai, India | June 2022 – Present}
-    \begin{tightemize}
-        \item Built RESTFul APIs from scratch for a suite of six interconnected Supply Chain Products which are consumed by Web and Mobile Applications.
-        \item Stack: Python, MySQL, Django, Django REST Framework.
-    \end{tightemize}
+\runsubsection{Fold}\descript{| Backend Engineering Intern}\hfill \location{Bangalore, India | September 2023 – Present}
+\begin{tightemize}
+  \item Built and shipped performant RESTFul APIs for personal finance products.
+  \item Optimized slow SQL Queries having execution time 435ms to almost less than 1 ms, which lead to lesser wait times for the user data to load.
+  \item Stack: Golang, PostgreSQL, Terraform.
+\end{tightemize}
+\sectionsep
+\runsubsection{Riggle}\descript{| Backend Engineering Intern}\hfill \location{Mumbai, India | June 2022 – August 2023}
+\begin{tightemize}
+  \item Built RESTFul APIs from scratch for a suite of six interconnected Supply Chain Products which are consumed by Web and Mobile Applications.
+  \item Stack: Python, MySQL, Django, Django REST Framework.
+\end{tightemize}
 \sectionsep
 \runsubsection{Navlakhi}\descript{| Intern}\hfill \location{Mumbai, India | June 2020 – August 2020}
-    \begin{tightemize}
-        \item Led a team of eight developers to build two internal platforms— student data management and to automate aggregation of data from CSV files to MySQL database.
-        \item Stack: PHP, MySQL, HTML, CSS
-    \end{tightemize}
+\begin{tightemize}
+  \item Led a team of eight developers to build two internal platforms— student data management and to automate aggregation of data from CSV files to MySQL database.
+  \item Stack: PHP, MySQL, HTML, CSS
+\end{tightemize}
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -97,7 +104,7 @@
 \raggedright
 \begin{tabular}{p{5cm}p{13.5cm}}
 \descript{Programming Languages} & {\location{Python, Go, Java, PHP and JavaScript}} \\
-\descript{Libraries/Frameworks} & {\location{Django, Django REST Framework, Flask, MySQL and SQLite}} \\
+\descript{Libraries/Frameworks} & {\location{Django, Django REST Framework, Flask, MySQL, PostgreSQL and SQLite}} \\
 \descript{Miscellaneous} & {\location{Git, GitHub, Figma and Unit Testing}}
 \end{tabular}
 \sectionsep
@@ -109,38 +116,29 @@
 \section{Projects / Open-Source}
 \raggedright
 \runsubsection{\large{Dekho}} \descript{| \href{https://github.com/Chirag-And-Dheeraj/video-streaming-server}{Link}}\hfill \location{Go, FFMPEG, HTML, CSS, JS}\\
-            \begin{tightemize}
-  \item Dekho is a basic video streaming server written without using any 3rd party libraries.
-  \item Applied the fundamentals HTTP Live Streaming \& chunked file uploads for large files.
+      \begin{tightemize}
+\item Dekho is a basic video streaming server written without using any 3rd party libraries.
+\item Applied the fundamentals HTTP Live Streaming \& chunked file uploads for large files.
 \end{tightemize}
-            \sectionsep
-          
-        
-            \runsubsection{\large{Back to Work}}
-            \descript{| \href{https://github.com/dheerajdlalwani/back-to-work}{Link}}\hfill \location{JavaScript, Chromium Web Extension APIs, HTML, CSS}\\
-            \begin{tightemize}
-  \item A web extension which attempts to keep you focused by blocking websites causing distraction.
+      \sectionsep
+    
+  
+      \runsubsection{\large{Back to Work}}
+      \descript{| \href{https://github.com/dheerajdlalwani/back-to-work}{Link}}\hfill \location{JavaScript, Chromium Web Extension APIs, HTML, CSS}\\
+      \begin{tightemize}
+\item A web extension which attempts to keep you focused by blocking websites causing distraction.
 \end{tightemize}
-            \sectionsep
-          
-        
-            \runsubsection{\large{Kata}}
-            \descript{| \href{https://github.com/dheerajdlalwani/url-shortener}{Link}}\hfill \location{Flask, Python, MongoDB, JavaScript}\\
-            \begin{tightemize}
-  \item Kata is a simple, bare bones URL Shortener.
-  \item Features: Shorten links anonymously, custom slugs and view click count.
-  \item Goal with this project was to become comfortable learning new technologies on the fly.
+      \sectionsep
+    
+  
+      \runsubsection{\large{Kata}}
+      \descript{| \href{https://github.com/dheerajdlalwani/url-shortener}{Link}}\hfill \location{Flask, Python, MongoDB, JavaScript}\\
+      \begin{tightemize}
+\item Kata is a simple, bare bones URL Shortener.
+\item Features: Shorten links anonymously, custom slugs and view click count.
+\item Goal with this project was to become comfortable learning new technologies on the fly.
 \end{tightemize}
-            \sectionsep
-          
-        
-            \runsubsection{\large{Navidrome}}
-            \descript{| \href{https://github.com/navidrome/navidrome/pull/1379}{Link}}\hfill \location{Go, Ginkgo, Gomega}\\
-            \begin{tightemize}
-  \item This is was originally a GSoC project but since it wasn\textquotesingle{}t opted by anyone, I chose to take it up.
-  \item Implemented an API to fetch and display Lyrics of a particular song and also wrote unit tests.
-\end{tightemize}
-\sectionsep
+      \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -149,15 +147,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Community Work}
 \raggedright
-        \runsubsection{\large{OTC (Our Tech Community)}}\descript{| Admin}\hfill \location{January 2020 - present}\\
-    \begin{tightemize}
-        \item Hosted over 500 hours of weekly \descript{\href{https://catchup.ourtech.community}{OTC CatchUp}} sessions since Oct 2020 involving technical discussion, project showcases and talks and organized \descript{\href{https://meetup.ourtech.community}{OTC MeetUp}} with over 60+ attendees.
-        \item \descript{\href{https://ourtech.community}{Our Tech Community - Website}}
-    \end{tightemize}
-            \sectionsep
-        \runsubsection{\large{TSEC CodeCell}}\descript{| Senior Committee Member}\hfill \location{July 2020 - present}\\
-        \begin{tightemize}
-        \item Organized 3 flagship hackathons - TSEC Hacks\textquotesingle{}21, 22 and 23 and organized workshops.
-        \item Co-ordinated with over 25 senior and junior committee members.
-    \end{tightemize}
+  \runsubsection{\large{OTC (Our Tech Community)}}\descript{| Admin}\hfill \location{January 2020 - present}\\
+\begin{tightemize}
+  \item Hosted over 500 hours of weekly \descript{\href{https://catchup.ourtech.community}{OTC CatchUp}} sessions since Oct 2020 involving technical discussion, project showcases and talks and organized \descript{\href{https://meetup.ourtech.community}{OTC MeetUp}} with over 60+ attendees.
+  \item \descript{\href{https://ourtech.community}{Our Tech Community - Website}}
+\end{tightemize}
+      \sectionsep
 \end{document}
